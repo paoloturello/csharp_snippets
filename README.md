@@ -8,3 +8,7 @@
 * Only 2 public methods:
   * `IEnumerable<IEnumerable<int>> Permute(int count)` returns all permutations of integers between `0` and `count - 1`
   * `IEnumerable<IEnumerable<T>> Permute<T>(IEnumerable<T> list)` returns all permutations of the list items
+
+### Known issues
+
+* If a `.ToList()` is applied, all the resulting permutations are equal to the last one
